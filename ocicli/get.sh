@@ -1,0 +1,9 @@
+export STREAM_OCID=ocid1.stream.oc1.ap-tokyo-1.amaaaaaavsea7yialw2xz3tce5m7tv2noanwxlospe6jdzqiwnrsht6d7xuq
+export ENDPOINT=https://cell-1.streaming.ap-tokyo-1.oci.oraclecloud.com
+export CURSOR_ID=eyJjdXJzb3JUeXBlIjoicGFydGl0aW9uIiwidHlwZSI6IlRyaW1Ib3Jpem9uIiwib2Zmc2V0IjpudWxsLCJ0aW1lIjpudWxsLCJwYXJ0aXRpb24iOiIwIiwic3RyZWFtSWQiOiJvY2lkMS5zdHJlYW0ub2MxLmFwLXRva3lvLTEuYW1hYWFhYWF2c2VhN3lpYWx3Mnh6M3RjZTVtN3R2Mm5vYW53eGxvc3BlNmpkenFpd25yc2h0NmQ3eHVxIiwiZXhwaXJhdGlvbiI6MTY3NDc5NDAwMzA3OSwiY3Vyc29yVHlwZSI6InBhcnRpdGlvbiJ9
+
+oci streaming stream message get \
+--stream-id $STREAM_OCID \
+--endpoint $ENDPOINT  \
+--cursor $CURSOR_ID
+
